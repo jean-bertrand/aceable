@@ -10,15 +10,15 @@
   <meta property="og:url" content="http://aceable.com/">
   <meta property="og:type" content="website">
   <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:image" content="{{ page.image }}">
+  <meta property="og:image" content="{{ site.baseurl }}/{{ page.image }}">
   <meta itemprop="name" content="{% if page.title == "Home" %} {{ site.title }} | {{ site.tagline }} {% else %} {{ site.title }} | {{ page.title }} {% endif %}">
   <meta itemprop="url" content="http://aceable.com/">
   <meta itemprop="description" content="{{ page.description }}"
-  <meta itemprop="thumbnailUrl" content="{{ page.thumb }}">
-  <link rel="image_src" href="{{ page.image }}">
+  <meta itemprop="thumbnailUrl" content="{{ site.baseurl }}/{{ page.thumb }}">
+  <link rel="image_src" href="{{ site.baseurl }}/{{ page.image }}">
   <meta itemprop="image" content="{{ page.image }}">
   <meta name="twitter:title" content="{% if page.title == "Home" %} {{ site.title }} | {{ site.tagline }} {% else %} {{ site.title }} | {{ page.title }} {% endif %}">
-  <meta name="twitter:image" content="{{ page.image }}">
+  <meta name="twitter:image" content="{{ site.baseurl }}/{{ page.image }}">
   <meta name="twitter:url" content="http://aceable.com/">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:description" content="{{ page.description }}"
@@ -34,7 +34,7 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
   <!-- Icons -->
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
