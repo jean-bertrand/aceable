@@ -154,7 +154,7 @@ body {
 	}
 	&.texas-driver-ed {
 		.masthead {
-			background: url('/assets/img/header-bg.jpg');
+			background: url('../img/header-bg.jpg');
 			@include background-cover-center;
 			min-height: 600px;
 		}
@@ -240,7 +240,7 @@ body {
 					background: $black;
 					position: absolute;
 					bottom: 0;
-					padding: 2.5em;
+					padding: 1em;
 					p.social-icons {
 						text-align: right;
 					}

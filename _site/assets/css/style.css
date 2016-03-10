@@ -3470,7 +3470,7 @@ body .masthead {
   body .masthead .centered {
     text-align: center; }
 body.texas-driver-ed .masthead {
-  background: url("/assets/img/header-bg.jpg");
+  background: url("../img/header-bg.jpg");
   background-size: cover;
   background-position: center;
   min-height: 600px; }
@@ -3553,7 +3553,7 @@ body.texas-driver-ed .footer {
     background: #212121;
     position: absolute;
     bottom: 0;
-    padding: 2.5em; }
+    padding: 1em; }
     body.texas-driver-ed .footer .row .social p.social-icons {
       text-align: right; }
     body.texas-driver-ed .footer .row .social .fa {
