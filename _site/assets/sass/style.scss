@@ -1,7 +1,6 @@
-@import 'settings/settings';
+@import 'ace-settings';
 @import 'foundation';
 @include foundation-everything;
-@import 'ace-settings';
 @import 'ace-mixins';
 
 //  Aceable Landing Page Styles
@@ -241,7 +240,7 @@ body {
 					background: $black;
 					position: absolute;
 					bottom: 0;
-					padding: 1rem;
+					padding: 2.5em;
 					p.social-icons {
 						text-align: right;
 					}
