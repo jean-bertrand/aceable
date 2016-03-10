@@ -1,0 +1,20 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+
+# Setup
+title:               Aceable
+tagline:             Drivers Ed &amp; Defensive Driving Online Courses - Aceable
+description:         Aceable offers state certified online drivers ed and defensive driving courses in Texas, California, and Florida. Available on iOS, Android, and online!
+url:                 http://aceable.com/
+baseurl:             ''
+
+# About/contact
+author:
+  name:              Jean-Bertrand
+  url:               https://jean-bertrand.github.io
+  email:             juwiling@gmail.com
+
+# Custom vars
+version:             1.0.0

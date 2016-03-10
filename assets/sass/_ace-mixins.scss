@@ -1,0 +1,45 @@
+//ACEABLE CUSTOM MIXINS
+
+
+//BACKGROUND
+@mixin background-cover-center {
+	background-size: cover;
+	background-position: center;
+}
+@mixin background-fullwidth-center {
+	background-size: 100%;
+	background-position: center;
+}
+@mixin background-gradient-radial {
+	background: -moz-radial-gradient(center, ellipse cover, rgba(88,211,209,0) 10%, rgba(0,0,0,0.5) 100%), ; /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(88,211,209,0) 10%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, rgba(88,211,209,0) 10%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#804cd3dc', endColorstr='#40000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+//BUTTON GROUP
+@mixin ace-button-group {
+	text-align: center;
+	padding: $global-padding;
+	display: block;
+}
+
+
+//BUTTONS
+@mixin ace-button-rounded {
+	font-family: $header-font-family;
+	text-align: center;
+	padding: 1rem 1.75rem;
+	display: inline-block;
+	box-shadow: 0 .5em 0 -.35em rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 .5em 0 -.35em rgba(0,0,0,.2);
+	text-shadow: 0 -.05em rgba(0,0,0,.1);
+	border-radius: 300px;
+	-webkit-border-radius: 300px;
+	
+	&:hover {
+		box-shadow: none;
+		-webkit-box-shadow: none;
+	}
+}
+

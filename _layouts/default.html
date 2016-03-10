@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	{% include head.html %}
+	<body class="{{ page.class }}">
+		{% include topbar.html %}
+		<div class="expanded row">
+			<div class="site-main">
+				{% include header.html %}
+				{% include features.html %}
+				{% include apps.html %}
+				{% include comparison.html %}
+				<!-- FAQs and Details -->
+				<div class="expanded row faqs-details relative">
+					<div class="large-centered columns no-margin-right">
+						<div class="row expanded align-middle small-up-1 medium-up-1 large-up-2">
+							<div class="column padded tabs-container">
+								<div class="large-12 large-centered columns">
+									<div class="small-12 medium-10 large-10 small-centered">
+										<ul class="ace tabs" data-tabs id="faq-details">
+											<li class="ace tabs-title is-active"><a href="#faqs" aria-selected="true">FAQs</a></li>
+											<li class="ace tabs-title"><a href="#details">DETAILS</a></li>
+										</ul>
+										<!-- tab content -->
+										<div class="ace tabs-content" data-tabs-content="example-tabs">
+											<div class="tabs-panel is-active" id="faqs">
+												{% include faq.html %}
+											</div>
+											<div class="tabs-panel" id="details">
+												{% include details.html %}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="column no-margin-right img-fill right desktop-only">
+								<span>&nbsp;</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% include testimonials.html %}
+				{% include featured-in.html %}
+			</div>
+		</div>
+		{% include footer.html %}
+    
+		<!-- Javascript -->
+		{% include js.html %}
+	</body>
+</html>

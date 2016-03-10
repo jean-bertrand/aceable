@@ -1,0 +1,340 @@
+@import 'settings/settings';
+@import 'foundation';
+@include foundation-everything;
+@import 'ace-settings';
+@import 'ace-mixins';
+
+//  Aceable Landing Page Styles
+//  -------------------------
+
+//MISC
+.relative {
+	position: relative !important;
+}
+.img-fill {
+	position: absolute;
+	height: 100%;
+	&.right {
+		right: 0;
+	}
+	&.left {
+		left: 0;
+	}
+}
+* {
+	&.white {
+		color: white;
+	}
+	&.centered {
+		text-align: center;
+	}
+	&.padded {
+		padding: $global-padding*3.5 $global-padding !important;
+	}
+	&.padded-top-bottom {
+		padding: $global-padding*3.5 0 !important;
+	}
+	&.mobile-only {
+		display: none;
+	}
+	&.block {
+		display: block;
+	}
+}
+
+
+
+//Typography
+h1 {
+	font-weight: $global-weight-normal;
+	&.site-title {
+		font-size: 1.25rem;
+	}
+}
+h1, h2 {
+	font-family: $header-font-family;
+	text-transform: uppercase;
+}
+h3, h4, h5 {
+	font-family: $header-font-family;
+}
+h4 { font-size: 2rem; }
+h5 { font-size: 1.5rem; }
+.subhead {
+	font-size: $lead-font-size+50%;
+	font-weight: 500;
+}
+p {
+	&.large {
+		font-size: $global-font-size+25%;	
+	}
+}
+
+//Icons 
+.lnr {
+	margin: 0 .5rem;
+}
+//BUTTONS
+.button-group {
+	@include ace-button-group;
+	.inline {
+		display: inline-block;
+	}
+	.ace-btn {
+		@include ace-button-rounded;
+		color: $white;
+		width: 80%;
+		&.ace-btn--primary {
+			background-color: $primary-color;
+			&:hover {
+				background-color: darken($primary-color, 5%);
+			}
+		}
+		&.ace-btn--secondary {
+			background-color: $secondary-color;
+			&:hover {
+				background-color: darken($alert-color, 5%);
+			}
+		}
+	}
+	.ace-btn-description {
+		display: block;
+		margin-top: 0.5rem;
+	}
+}
+
+//TABS 
+.tabs.ace {
+	border: none;
+	.tabs-title > a {
+		font-size: $global-font-size+25%;
+		padding: 1.25rem 0;
+		margin-right: 1.25rem;
+	}
+	.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+		background: transparent;
+		border-bottom: 1px solid $medium-gray;
+	}
+}
+.tabs-content.ace {
+	border: none;
+	.tabs-panel {
+		padding: 1.5rem 0;
+	}
+}
+
+//Mastheads and Topbars
+body {
+	.top-bar {
+		padding: 0;
+		background: $black;
+		.top-bar-left, .top-bar-right {
+			padding: 1rem;
+		}
+		ul {
+			background: transparent;
+		}
+		.mobile-menu {
+			display: none;
+		}
+	}
+	.masthead {
+		padding: 10rem 0 5rem;
+		margin-bottom: 2rem;
+		background-color: $black;
+		h1 {
+			font-family: $header-font-family;
+			color: white;
+			br.mobile-break {
+				display: none;
+			}
+		}
+		.centered {
+			text-align: center;
+		}
+	}
+	&.texas-driver-ed {
+		.masthead {
+			background: url('/assets/img/header-bg.jpg');
+			@include background-cover-center;
+			min-height: 600px;
+		}
+		.features {
+			padding: $global-padding*2;
+			.column {
+				padding-top: $global-padding;
+				padding-bottom: $global-padding;
+			}
+			.ace-icon {
+				display: block;
+				height:80px;
+				text-align: center;
+			}
+			.ace-icon--description {
+				max-width: 70%;
+				margin:0 auto;
+				text-align: center;
+			}
+		}
+		.apps {
+			@include background-gradient-radial;
+			background-color: $primary-color;
+			padding: $global-padding*2.5 0;
+			position: relative;
+			.no-margin-right {
+				margin-right: 0px !important;
+				padding: 0;
+			}
+			p.large a {
+				padding: .5rem 1.5rem;
+				background: white;
+				border-radius: 300px;
+			}
+		}
+		.comparison {
+			#comparison-graphic img {
+				margin: 0 auto;
+				display: block;
+				pointer-events: none;
+			}
+		}
+		.faqs-details {
+			border-top: 1px solid $light-gray;
+			border-bottom: 1px solid $light-gray;
+			min-height: 730px;
+			.tabs-container {
+				position: absolute;
+				height: 100%;
+				overflow-y: scroll;
+				background-color: white;
+				z-index:1;
+			}
+			.no-margin-right {
+				margin-right: 0px !important;
+				padding: 0;
+			}
+			.img-fill.right {
+				background-image: url('../img/aceable-imac-screen.png');
+				@include background-cover-center;
+				z-index: 0;
+			}
+			.icon-list {
+				.row {
+					padding: 1.5em 0;
+				}
+				span { display: inline-block; vertical-align: middle;}
+				span.icon {
+					width: 15%;
+				}
+				span.icon-description {
+					width: 80%;
+					padding-left: 2.5%;
+				}
+			}
+		}
+		.footer {
+			min-height: 415px;
+			@include background-gradient-radial;
+			background-color: $slate-gray;
+			.row {
+				.social {
+					background: $black;
+					position: absolute;
+					bottom: 0;
+					padding: 1rem;
+					p.social-icons {
+						text-align: right;
+					}
+					.fa {
+						height: 25px;
+						    width: 25px;
+						    box-sizing: border-box;
+						    background: white;
+						    padding: 6px;
+						    border-radius: 50%;
+						    margin: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+//Site Main
+@media screen and (max-width: 45em) and (min-width: 0em) {
+	body {
+		* {
+			&.mobile-only {
+				display: block;
+			}
+			&.desktop-only {
+				display: none !important;
+			}
+			&.padded {
+				padding: $global-padding*2 $global-padding !important;
+			}
+		}
+		&.texas-driver-ed.control {
+			.masthead {
+				min-height: 90vh;
+				margin-bottom: 0;
+				.subhead {
+					font-size: $global-font-size+25%;
+				}
+			}
+			.site-main {
+				min-height: 100vh;
+			}
+			.top-bar {
+				text-align: center;
+				&-left, &-right {
+					width: 50%;
+					display: inline-block;
+					padding: 1rem 0 !important;
+					vertical-align: middle;
+					span {
+						display: none;
+						&.lnr {
+							display: inline-block !important;
+						}
+					}
+				}
+				&-left {
+					text-align: left;
+				}
+				&-right {
+					.menu { text-align: right;}
+					.menu li { display: inline-block;}
+					.menu > li > a {
+						padding: 0.7rem 0rem;
+					}
+				}
+				.mobile-menu {
+					display: block;
+					.menu {
+						padding: .5rem 0;
+						text-align: center;
+						border-top: 1px solid white;
+					}
+					.menu li {display: inline-block;}
+				}
+			}
+			.features {
+				.ace-icon {
+					display: block;
+					height:80px;
+					text-align: center;
+				}
+				.ace-icon--description {
+					max-width: 100%;
+					margin:0 auto;
+					text-align: center;
+				}
+			}
+			.apps {
+				.button-group {
+					padding: 1rem 0 !important;
+				}
+			}
+		}
+	}
+}

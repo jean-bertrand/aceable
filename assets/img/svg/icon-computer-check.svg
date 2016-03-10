@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="106px" height="62px" viewBox="0 0 106 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-computer-check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-290.000000, -837.000000)" stroke-width="1.5">
+            <g id="icon-computer-check" transform="translate(291.000000, 838.000000)">
+                <path d="M91.4967123,48.1067671 L52.6627397,48.1067671 L13.8287671,48.1067671 L13.8287671,4.89032877 L91.4967123,4.89032877 L91.4967123,48.1067671 L91.4967123,48.1067671 Z" id="Stroke-35" stroke="#B5BCC2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M7.0769589,51.2111507 L7.0769589,5.90293151 C7.0769589,3.04347945 9.97915068,0.723205479 13.5553151,0.723205479 L91.2980548,0.723205479 C94.8750411,0.723205479 97.7772329,3.04347945 97.7772329,5.90293151 L97.7772329,51.2111507" id="Stroke-37" stroke="#B5BCC2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M63.5159178,51.2111507 L41.0397534,51.2111507 L0.583315068,51.2111507 L0.583315068,56.688411 C0.583315068,58.2023836 2.59783562,59.427863 5.07838356,59.427863 L99.4772877,59.427863 C101.961945,59.427863 103.972356,58.2023836 103.972356,56.688411 L103.972356,51.2111507 L63.5159178,51.2111507 L63.5159178,51.2111507 Z" id="Stroke-39" stroke="#B5BCC2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M57.8188767,22.4143562 L51.3281918,32.7581918 L46.9884658,28.4184658" id="Stroke-41" stroke="#4CD3DC"></path>
+                <path d="M65.2960274,27.3087945 C65.2960274,34.3559178 59.5812329,40.0682466 52.5365753,40.0682466 C45.4878082,40.0682466 39.7763014,34.3559178 39.7763014,27.3087945 C39.7763014,20.2608493 45.4878082,14.5493425 52.5365753,14.5493425 C59.5812329,14.5493425 65.2960274,20.2608493 65.2960274,27.3087945 L65.2960274,27.3087945 Z" id="Stroke-43" stroke="#4CD3DC"></path>
+            </g>
+        </g>
+    </g>
+</svg>
