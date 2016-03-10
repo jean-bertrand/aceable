@@ -8,7 +8,7 @@ title:               Aceable
 tagline:             Drivers Ed &amp; Defensive Driving Online Courses - Aceable
 description:         Aceable offers state certified online drivers ed and defensive driving courses in Texas, California, and Florida. Available on iOS, Android, and online!
 url:                 http://aceable.com/
-baseurl:             ''
+baseurl:             http://aceable.com
 
 # About/contact
 author:
